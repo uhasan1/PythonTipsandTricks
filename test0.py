@@ -1,26 +1,25 @@
 import sys
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
+
 print(sys.executable)
 print(sys.version)
 
-from tqdm import tqdm
-
 class Employee:
-    """ A sample Employee class """
+        """ A sample Employee class """
 
-    def __init__(self, first, last):
-        self.first = first
-        self.last = last
+        def __init__(self, first, last):
+            self.first = first
+            self.last = last
 
-    @property
-    def email(self):
-        return '{}.{}@email.com'.format(self.first, self.last)
+        @property
+        def email(self):
+            return '{}.{}@email.com'.format(self.first, self.last)
 
-    @property
-    def fullname(self):
-        return '{}  {}'.format(self.first, self.last)
-
+        @property
+        def fullname(self):
+            return '{}  {}'.format(self.first, self.last)
 
 employee_1 = Employee('Ghasak', 'Ibrahim')
 
@@ -44,12 +43,12 @@ Dict = {"X": ["A", "B", "C"], "Y": [100, 200, 300, 500], "Z": [0]}
 for key, value in Dict.items():
     print(f"Colum {key}", f"and Value = {value}")
 
-for i in tqdm(range(int(1000000))):
-    pass
+for i in tqdm(range(int(1e8))):
+    continue
 
 # There are many things that we would like to add to our current file
 A = [1,2,3,4]
-B = {"col1": [1,2,3],"col2":[4,5,6]}
+B = {"col1": [1,2,3] , "col2":[4,5,6]}
 
 # Forms of for loop in python:
 # Forms with a list-form,
