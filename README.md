@@ -95,7 +95,7 @@ for f in os.listdir():
     os.rename(fn, new_name)
 ```
 # List Dictionary and Tuples tricks
-to get the reverse elements of a function you can run
+to get the reverse elements of a function you can run. **see test1.py**
 
 ```
 list[::-1]
