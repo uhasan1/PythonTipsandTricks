@@ -63,7 +63,7 @@ for item in B.values():
 print("-----------")
 for item in B.items():
     print(item)
-    print("The value of keys is {} and the value of list of a key is {}".format(item[0],item[1]))
+    print("The value of keys is {} and the value of list of a key is {}".format(item[0], item[1]))
 print("-----------")
 
 # Forms with looping through counters
@@ -86,7 +86,7 @@ print("-----------")
 
 # There is anotherway which is not good and no one use just to over come the problem above
 # https://stackoverflow.com/questions/4326658/how-to-index-into-a-dictionary
-Bnew = {1:[1,2,3],2:[4,5,6],3:[7,8,9]}
+Bnew = {1: [1, 2, 3], 2: [4, 5, 6], 3: [7, 8, 9]}
 
 for i in range(len(Bnew)):
     print(Bnew[1][i])
